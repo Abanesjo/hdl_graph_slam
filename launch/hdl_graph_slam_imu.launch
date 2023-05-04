@@ -64,9 +64,9 @@
     <param name="max_acceptable_trans" value="1.0" />
     <param name="max_acceptable_angle" value="1.0" />
     <param name="downsample_method" value="NONE" />
-    <param name="downsample_resolution" value="0.1" />
+    <param name="downsample_resolution" value="0.05" />
     <!-- ICP, GICP, NDT, GICP_OMP, or NDT_OMP(recommended) -->
-    <param name="registration_method" value="NDT_OMP" />
+    <param name="registration_method" value="GICP_OMP" />
     <param name="transformation_epsilon" value="0.01"/>
     <param name="maximum_iterations" value="64"/>
     <param name="use_reciprocal_correspondences" value="false"/>
@@ -118,7 +118,7 @@
     <param name="fitness_score_thresh" value="0.5" />
     <!-- scan matching params -->
     <param name="registration_method" value="GICP" />
-    <param name="ndt_resolution" value="1.0" />
+    <param name="ndt_resolution" value="0.5" />
     <param name="ndt_num_threads" value="0" />
     <param name="ndt_nn_search_method" value="DIRECT7" />
     <!-- edge params -->
